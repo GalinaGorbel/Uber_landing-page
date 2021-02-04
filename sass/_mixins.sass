@@ -1,0 +1,50 @@
+@mixin bigtext
+	font-size: 38px
+	font-weight: 700
+	margin: 38px auto 40px
+	line-height: 48px
+	text-align: center
+	text-transform: uppercase
+
+@mixin smalltext
+	margin-top: 19px
+	font-size: 17px
+	font-weight: 400
+	text-align: center
+		
+@mixin rectangle($color, $bgColor, $width: 112px, $height: 24px)
+	color: $color
+	background-color: $bgColor
+	margin: 0 auto
+	padding: 8px 11px 6px 12px
+	width: $width
+	height: $height
+	font-size: 11px
+	font-weight: 400
+	line-height: 9px
+	text-align: center
+	text-transform: uppercase
+
+@mixin text
+	color: #222222
+	font-size: 17px
+	font-weight: 300
+	line-height: 24px
+
+@mixin button($width, $height, $fz)
+	display: block
+	width: $width
+	height: $height
+	box-shadow: inset 0 -4px 0 rgba(0, 0, 0, 0.12)
+	border: none
+	border-radius: 4px
+	background-image: linear-gradient(to top, #1eacc7 0%, #4ce2ff 100%)
+	color: #ffffff
+	font-size: $fz
+	font-weight: 400
+	text-transform: uppercase
+
+@mixin button_hover
+	&:hover
+		background-image: none
+		background-color: $main-color
